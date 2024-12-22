@@ -1,3 +1,19 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+
+# Godot-specific files
+.import/             # Ignore the imported assets folder
+export/              # Ignore the export folder
+*.import             # Ignore specific imported files
+
+# OS-specific files
+.DS_Store            # macOS metadata files
+Thumbs.db            # Windows thumbnail cache
+desktop.ini          # Windows folder settings file
+
+# Version control
+*.log                # Log files
+*.tmp                # Temporary files
+*.bak                # Backup files
+*.swp                # Vim swap files
