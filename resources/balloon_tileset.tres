@@ -1,0 +1,18 @@
+[gd_resource type="TileSet" load_steps=6 format=3 uid="uid://bfycqwhvfmjyf"]
+
+[ext_resource type="PackedScene" uid="uid://bmghjdu7kggnd" path="res://scenes/objects/BalloonTileRed.tscn" id="1_3se03"]
+[ext_resource type="PackedScene" uid="uid://b2w38ma81rdgk" path="res://scenes/objects/BalloonTileBlue.tscn" id="2_ho58v"]
+[ext_resource type="PackedScene" path="res://scenes/objects/BalloonTileGreen.tscn" id="3_k4v2s"]
+[ext_resource type="PackedScene" path="res://scenes/objects/BalloonTileYellow.tscn" id="4_p7glc"]
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_bepkv"]
+scenes/1/scene = ExtResource("1_3se03")
+scenes/2/scene = ExtResource("2_ho58v")
+scenes/3/scene = ExtResource("3_k4v2s")
+scenes/4/scene = ExtResource("4_p7glc")
+
+[resource]
+tile_size = Vector2i(32, 32)
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 0
+sources/0 = SubResource("TileSetScenesCollectionSource_bepkv")

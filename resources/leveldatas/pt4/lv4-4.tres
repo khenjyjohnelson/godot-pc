@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=3 format=3 uid="uid://ctjv2q5seq520"]
+
+[ext_resource type="PackedScene" uid="uid://2jnve87i0a35" path="res://scenes/levels/Level4-4.tscn" id="1_gn3wx"]
+[ext_resource type="Script" path="res://resources/leveldatas/LevelData.gd" id="2_ubp8c"]
+
+[resource]
+script = ExtResource("2_ubp8c")
+lv_title = "Countdown"
+lv_scene = ExtResource("1_gn3wx")
+enable_switch = true

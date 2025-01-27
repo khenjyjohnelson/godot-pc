@@ -1,0 +1,165 @@
+[gd_scene load_steps=6 format=3 uid="uid://r6j1n35055hn"]
+
+[ext_resource type="Texture2D" uid="uid://diemufq4cvjic" path="res://resources/sprites/Assets/Main Menu.png" id="1_tvp6m"]
+[ext_resource type="Texture2D" uid="uid://mvlb35jq0iqj" path="res://resources/sprites/decorations/cloud.png" id="1_vqf7c"]
+[ext_resource type="Texture2D" uid="uid://cb1buqgrw37en" path="res://resources/sprites/decorations/cloud2.png" id="2_3wlse"]
+[ext_resource type="Material" uid="uid://bheq76h3hhbcm" path="res://resources/star_particle.tres" id="3_ad844"]
+[ext_resource type="Texture2D" uid="uid://2jap1cmbn5vi" path="res://resources/sprites/objects/balloon.png" id="5_8mumd"]
+
+[node name="BG" type="Node2D"]
+
+[node name="Gradient" type="TextureRect" parent="."]
+z_index = -100
+offset_left = -47.0
+offset_top = -27.0
+offset_right = 6093.0
+offset_bottom = 3418.0
+scale = Vector2(0.2, 0.2)
+mouse_filter = 2
+texture = ExtResource("1_tvp6m")
+
+[node name="Clouds" type="Node2D" parent="."]
+
+[node name="Cloud" type="Sprite2D" parent="Clouds"]
+modulate = Color(0.2, 0.27451, 0.631373, 1)
+z_index = -4
+position = Vector2(125, 299)
+texture = ExtResource("1_vqf7c")
+
+[node name="Cloud4" type="Sprite2D" parent="Clouds"]
+modulate = Color(0.2, 0.27451, 0.631373, 1)
+z_index = -4
+position = Vector2(322, 85)
+texture = ExtResource("1_vqf7c")
+
+[node name="Cloud5" type="Sprite2D" parent="Clouds"]
+modulate = Color(0.2, 0.27451, 0.631373, 1)
+z_index = -4
+position = Vector2(916, 190)
+texture = ExtResource("1_vqf7c")
+
+[node name="Cloud6" type="Sprite2D" parent="Clouds"]
+visible = false
+modulate = Color(0.2, 0.27451, 0.631373, 1)
+z_index = -4
+position = Vector2(985, 181)
+rotation = -0.228895
+texture = ExtResource("1_vqf7c")
+
+[node name="Cloud7" type="Sprite2D" parent="Clouds"]
+modulate = Color(0.2, 0.27451, 0.631373, 1)
+z_index = -4
+position = Vector2(1059.1, 323.977)
+rotation = 0.0885558
+scale = Vector2(1.22396, 1.19431)
+texture = ExtResource("1_vqf7c")
+
+[node name="Cloud8" type="Sprite2D" parent="Clouds"]
+modulate = Color(0.2, 0.27451, 0.631373, 1)
+z_index = -4
+position = Vector2(955, 337)
+rotation = 0.0885558
+scale = Vector2(1.22396, 1.19431)
+texture = ExtResource("1_vqf7c")
+
+[node name="Cloud9" type="Sprite2D" parent="Clouds"]
+modulate = Color(0.2, 0.27451, 0.631373, 1)
+z_index = -4
+position = Vector2(864, 334)
+rotation = -0.0838567
+scale = Vector2(1.22396, 1.19431)
+texture = ExtResource("1_vqf7c")
+
+[node name="Cloud2" type="Sprite2D" parent="Clouds"]
+modulate = Color(0.2, 0.27451, 0.631373, 1)
+z_index = -4
+position = Vector2(197, 289)
+rotation = 0.126669
+texture = ExtResource("1_vqf7c")
+
+[node name="Cloud3" type="Sprite2D" parent="Clouds"]
+modulate = Color(0.2, 0.27451, 0.631373, 1)
+z_index = -4
+position = Vector2(255, 301)
+rotation = -0.217706
+scale = Vector2(0.78125, 0.791667)
+texture = ExtResource("1_vqf7c")
+
+[node name="Cloud10" type="Sprite2D" parent="Clouds"]
+modulate = Color(0.207843, 0.286275, 0.654902, 1)
+z_index = -4
+position = Vector2(1089, 532)
+rotation = -0.217706
+texture = ExtResource("2_3wlse")
+
+[node name="Cloud11" type="Sprite2D" parent="Clouds"]
+modulate = Color(0.2, 0.27451, 0.631373, 1)
+z_index = -4
+position = Vector2(808.729, 573.529)
+rotation = -0.0266797
+texture = ExtResource("2_3wlse")
+
+[node name="Cloud12" type="Sprite2D" parent="Clouds"]
+modulate = Color(0.184314, 0.254902, 0.596078, 1)
+z_index = -4
+position = Vector2(562, 579)
+rotation = 0.0408732
+texture = ExtResource("2_3wlse")
+
+[node name="Cloud13" type="Sprite2D" parent="Clouds"]
+modulate = Color(0.2, 0.27451, 0.631373, 1)
+z_index = -4
+position = Vector2(279, 568)
+rotation = 0.145446
+texture = ExtResource("2_3wlse")
+
+[node name="Cloud14" type="Sprite2D" parent="Clouds"]
+modulate = Color(0.207843, 0.286275, 0.654902, 1)
+z_index = -4
+position = Vector2(78, 521)
+rotation = 0.410499
+texture = ExtResource("2_3wlse")
+
+[node name="Cloud15" type="Sprite2D" parent="Clouds"]
+modulate = Color(0.807843, 0.921569, 0.85098, 1)
+z_index = -4
+position = Vector2(15, 580)
+rotation = 0.410499
+texture = ExtResource("2_3wlse")
+
+[node name="Cloud16" type="Sprite2D" parent="Clouds"]
+modulate = Color(0.74902, 0.894118, 0.803922, 1)
+z_index = -4
+position = Vector2(269, 631)
+rotation = 0.171809
+texture = ExtResource("2_3wlse")
+
+[node name="Cloud17" type="Sprite2D" parent="Clouds"]
+modulate = Color(0.807843, 0.921569, 0.85098, 1)
+z_index = -4
+position = Vector2(533, 647)
+rotation = 0.0210052
+texture = ExtResource("2_3wlse")
+
+[node name="Cloud18" type="Sprite2D" parent="Clouds"]
+modulate = Color(0.768627, 0.905882, 0.819608, 1)
+z_index = -4
+position = Vector2(829.376, 623.301)
+rotation = -0.0613779
+texture = ExtResource("2_3wlse")
+
+[node name="Cloud19" type="Sprite2D" parent="Clouds"]
+modulate = Color(0.807843, 0.921569, 0.85098, 1)
+z_index = -4
+position = Vector2(1108, 586)
+rotation = -0.310773
+texture = ExtResource("2_3wlse")
+
+[node name="StarParticles" type="GPUParticles2D" parent="."]
+z_index = -6
+position = Vector2(591, 329)
+amount = 100
+process_material = ExtResource("3_ad844")
+texture = ExtResource("5_8mumd")
+lifetime = 4.0
+speed_scale = 2.0

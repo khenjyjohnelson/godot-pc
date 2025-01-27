@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=3 format=3 uid="uid://c8wvy00tjhlds"]
+
+[ext_resource type="PackedScene" uid="uid://d3xp0xitwkro" path="res://scenes/levels/Level4-2.tscn" id="1_einuk"]
+[ext_resource type="Script" path="res://resources/leveldatas/LevelData.gd" id="2_ev1q4"]
+
+[resource]
+script = ExtResource("2_ev1q4")
+lv_title = "Shape Manipulation"
+lv_scene = ExtResource("1_einuk")
+enable_switch = true

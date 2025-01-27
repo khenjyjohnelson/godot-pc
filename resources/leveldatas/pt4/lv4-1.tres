@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=3 format=3 uid="uid://dxtgjuib20h8m"]
+
+[ext_resource type="PackedScene" uid="uid://de8v1nlqpkjnt" path="res://scenes/levels/Level4-1.tscn" id="1_o2tye"]
+[ext_resource type="Script" path="res://resources/leveldatas/LevelData.gd" id="2_kd6n2"]
+
+[resource]
+script = ExtResource("2_kd6n2")
+lv_title = "Hi"
+lv_scene = ExtResource("1_o2tye")
+enable_switch = true
