@@ -5,6 +5,6 @@
 
 [resource]
 script = ExtResource("2_ekupb")
-lv_title = "Hello Blue"
+lv_title = "The Countdown"
 lv_scene = ExtResource("1_kixvc")
 enable_switch = true

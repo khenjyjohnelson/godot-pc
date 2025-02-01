@@ -5,6 +5,6 @@
 
 [resource]
 script = ExtResource("2_sngto")
-lv_title = "Long Balon"
+lv_title = "Do it before the storm"
 lv_scene = ExtResource("1_2fvch")
 enable_switch = true
