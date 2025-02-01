@@ -1,23 +1,23 @@
 [gd_scene load_steps=25 format=3 uid="uid://xuwgyspygd5d"]
 
-[ext_resource type="Texture2D" uid="uid://cg37twk5njfgt" path="res://resources/sprites/objects/cloud_floor.png" id="1_u3unj"]
+[ext_resource type="Texture2D" uid="uid://ctgeq5faj5v2" path="res://resources/sprites/objects/cloud_floor.png" id="1_u3unj"]
 [ext_resource type="TileSet" uid="uid://cau1xylhqfcta" path="res://resources/terrain_tiles.tres" id="2_atjgc"]
 [ext_resource type="Script" path="res://scenes/objects/Walls.gd" id="3_cyi0s"]
 [ext_resource type="PackedScene" uid="uid://c72eakpv5xabw" path="res://scenes/objects/Balloon.tscn" id="4_2lfk4"]
 [ext_resource type="TileSet" uid="uid://bknitdukt8bmp" path="res://resources/object_tilemap.tres" id="5_otae6"]
 [ext_resource type="PackedScene" uid="uid://bkq7xno86tr4y" path="res://scenes/decorations/BalloonDeco.tscn" id="6_8p3ba"]
-[ext_resource type="Texture2D" uid="uid://dnf7tkl0s3xhc" path="res://resources/sprites/decorations/balloon_deco2.png" id="7_jg6au"]
+[ext_resource type="Texture2D" uid="uid://b3x4tqojf658w" path="res://resources/sprites/decorations/balloon_deco2.png" id="7_jg6au"]
 [ext_resource type="PackedScene" uid="uid://uwc3d4r7yvxc" path="res://scenes/decorations/SparkleDeco.tscn" id="8_ygr10"]
 [ext_resource type="Shader" path="res://resources/shaders/drop_shadow.gdshader" id="9_43vc5"]
-[ext_resource type="Texture2D" uid="uid://vqn1s0iihaol" path="res://resources/sprites/ui/arrow.png" id="10_deywa"]
+[ext_resource type="Texture2D" uid="uid://d2oxatoc54aef" path="res://resources/sprites/ui/arrow.png" id="10_deywa"]
 [ext_resource type="Script" path="res://scenes/decorations/RotationTween.gd" id="11_p6x4l"]
-[ext_resource type="Texture2D" uid="uid://ccq070ksjvq0q" path="res://resources/sprites/ui/space_key.png" id="12_31xnr"]
-[ext_resource type="Texture2D" uid="uid://8pyk6032qg2n" path="res://resources/sprites/ui/right_key.png" id="13_5e25k"]
-[ext_resource type="Texture2D" uid="uid://diuwnyo6e4cuh" path="res://resources/sprites/ui/sad.png" id="14_y13ol"]
-[ext_resource type="Texture2D" uid="uid://d0vkm4nmq8i5" path="res://resources/sprites/ui/right_arrow.png" id="15_fmyc8"]
-[ext_resource type="Texture2D" uid="uid://bpoyx00rfb18r" path="res://resources/sprites/ui/z.png" id="16_d6giy"]
-[ext_resource type="Texture2D" uid="uid://gfr7hr3fge2w" path="res://resources/sprites/ui/supersad.png" id="17_rin06"]
-[ext_resource type="Texture2D" uid="uid://biinm4o0dh4ug" path="res://resources/sprites/ui/r.png" id="18_5u2wh"]
+[ext_resource type="Texture2D" uid="uid://dytxedm2njrc" path="res://resources/sprites/ui/space_key.png" id="12_31xnr"]
+[ext_resource type="Texture2D" uid="uid://cwbsekbiq0key" path="res://resources/sprites/ui/right_key.png" id="13_5e25k"]
+[ext_resource type="Texture2D" uid="uid://jhrqu35mp0km" path="res://resources/sprites/ui/sad.png" id="14_y13ol"]
+[ext_resource type="Texture2D" uid="uid://f510r8gfdngs" path="res://resources/sprites/ui/right_arrow.png" id="15_fmyc8"]
+[ext_resource type="Texture2D" uid="uid://n45p76a0b37k" path="res://resources/sprites/ui/z.png" id="16_d6giy"]
+[ext_resource type="Texture2D" uid="uid://bbampr2tfdurl" path="res://resources/sprites/ui/supersad.png" id="17_rin06"]
+[ext_resource type="Texture2D" uid="uid://c2eqrj7ket0nr" path="res://resources/sprites/ui/r.png" id="18_5u2wh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7apv3"]
 texture = ExtResource("1_u3unj")
@@ -188,6 +188,13 @@ texture = ExtResource("13_5e25k")
 script = ExtResource("11_p6x4l")
 move_angle = 4.0
 move_time = 1.2
+
+[node name="Label" type="Label" parent="."]
+offset_left = 717.0
+offset_top = 405.0
+offset_right = 891.0
+offset_bottom = 428.0
+text = "Switch Characters -> J"
 
 [node name="Tuto" type="Node2D" parent="."]
 visible = false
