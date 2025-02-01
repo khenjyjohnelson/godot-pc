@@ -1,0 +1,239 @@
+[gd_scene load_steps=25 format=3 uid="uid://xuwgyspygd5d"]
+
+[ext_resource type="Texture2D" uid="uid://bqdcjenaylpsn" path="res://resources/sprites/objects/cloud_floor.png" id="1_u3unj"]
+[ext_resource type="TileSet" uid="uid://cau1xylhqfcta" path="res://resources/terrain_tiles.tres" id="2_atjgc"]
+[ext_resource type="Script" path="res://scenes/objects/Walls.gd" id="3_cyi0s"]
+[ext_resource type="PackedScene" uid="uid://c72eakpv5xabw" path="res://scenes/objects/Balloon.tscn" id="4_2lfk4"]
+[ext_resource type="TileSet" uid="uid://bknitdukt8bmp" path="res://resources/object_tilemap.tres" id="5_otae6"]
+[ext_resource type="PackedScene" uid="uid://bkq7xno86tr4y" path="res://scenes/decorations/BalloonDeco.tscn" id="6_8p3ba"]
+[ext_resource type="Texture2D" uid="uid://6s3hy4q03v1t" path="res://resources/sprites/decorations/balloon_deco2.png" id="7_jg6au"]
+[ext_resource type="PackedScene" uid="uid://uwc3d4r7yvxc" path="res://scenes/decorations/SparkleDeco.tscn" id="8_ygr10"]
+[ext_resource type="Shader" path="res://resources/shaders/drop_shadow.gdshader" id="9_43vc5"]
+[ext_resource type="Texture2D" uid="uid://dgrompdf0m543" path="res://resources/sprites/ui/arrow.png" id="10_deywa"]
+[ext_resource type="Script" path="res://scenes/decorations/RotationTween.gd" id="11_p6x4l"]
+[ext_resource type="Texture2D" uid="uid://dwkr01ficc2us" path="res://resources/sprites/ui/space_key.png" id="12_31xnr"]
+[ext_resource type="Texture2D" uid="uid://domn6douondnf" path="res://resources/sprites/ui/right_key.png" id="13_5e25k"]
+[ext_resource type="Texture2D" uid="uid://d3p05scoe0nnh" path="res://resources/sprites/ui/sad.png" id="14_y13ol"]
+[ext_resource type="Texture2D" uid="uid://bs3i54mtky7kk" path="res://resources/sprites/ui/right_arrow.png" id="15_fmyc8"]
+[ext_resource type="Texture2D" uid="uid://c7e2vot3bn07m" path="res://resources/sprites/ui/z.png" id="16_d6giy"]
+[ext_resource type="Texture2D" uid="uid://bk0n1dqb11hlm" path="res://resources/sprites/ui/supersad.png" id="17_rin06"]
+[ext_resource type="Texture2D" uid="uid://degwwdi6gq5og" path="res://resources/sprites/ui/r.png" id="18_5u2wh"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7apv3"]
+texture = ExtResource("1_u3unj")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_r0334"]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_7apv3")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5ab4h"]
+shader = ExtResource("9_43vc5")
+shader_parameter/borderScale = 2.0
+shader_parameter/offset = Vector2(-3, -3)
+shader_parameter/color = Color(0, 0, 0, 0.490196)
+shader_parameter/debug = false
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_q2ywg"]
+shader = ExtResource("9_43vc5")
+shader_parameter/borderScale = 2.0
+shader_parameter/offset = Vector2(-3, -3)
+shader_parameter/color = Color(0, 0, 0, 0.490196)
+shader_parameter/debug = false
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hjtiy"]
+shader = ExtResource("9_43vc5")
+shader_parameter/borderScale = 2.0
+shader_parameter/offset = Vector2(-3, -3)
+shader_parameter/color = Color(0, 0, 0, 0.490196)
+shader_parameter/debug = false
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_iadin"]
+shader = ExtResource("9_43vc5")
+shader_parameter/borderScale = 2.0
+shader_parameter/offset = Vector2(-5, -5)
+shader_parameter/color = Color(0, 0, 0, 0.427451)
+shader_parameter/debug = false
+
+[node name="Level18" type="Node2D"]
+
+[node name="Floors" type="TileMap" parent="."]
+z_index = -2
+tile_set = SubResource("TileSet_r0334")
+format = 2
+layer_0/tile_data = PackedInt32Array(1179663, 0, 0, 1179664, 0, 0, 1179665, 0, 0, 1179666, 0, 0, 393230, 0, 0, 458766, 0, 0, 524302, 0, 0, 589838, 0, 0, 655374, 0, 0, 720910, 0, 0, 393231, 0, 0, 458767, 0, 0, 524303, 0, 0, 589839, 0, 0, 655375, 0, 0, 720911, 0, 0, 393232, 0, 0, 458768, 0, 0, 524304, 0, 0, 589840, 0, 0, 655376, 0, 0, 720912, 0, 0, 393233, 0, 0, 458769, 0, 0, 524305, 0, 0, 589841, 0, 0, 655377, 0, 0, 720913, 0, 0, 393234, 0, 0, 458770, 0, 0, 524306, 0, 0, 589842, 0, 0, 655378, 0, 0, 720914, 0, 0, 524307, 0, 0, 589843, 0, 0, 655379, 0, 0, 786448, 0, 0, 851984, 0, 0, 786449, 0, 0, 851985, 0, 0, 786450, 0, 0, 851986, 0, 0, 851981, 0, 0, 851982, 0, 0, 851983, 0, 0, 720907, 0, 0, 720908, 0, 0, 720909, 0, 0, 786445, 0, 0, 589836, 0, 0, 589837, 0, 0, 524301, 0, 0, 589844, 0, 0, 655380, 0, 0)
+
+[node name="Walls" type="TileMap" parent="." groups=["wall"]]
+z_index = -1
+tile_set = ExtResource("2_atjgc")
+format = 2
+layer_0/tile_data = PackedInt32Array(1114126, 1, 0, 1114127, 1, 0, 1114128, 1, 0, 1114129, 1, 0, 1114130, 1, 0, 1114131, 1, 0, 1179662, 1, 0, 1245198, 1, 0, 1245199, 1, 0, 1245200, 1, 0, 1245201, 1, 0, 1245202, 1, 0, 1245203, 1, 0, 917516, 1, 0, 917517, 1, 0, 917518, 1, 0, 917519, 1, 0, 917520, 1, 0, 917521, 1, 0, 917522, 1, 0, 851980, 1, 0, 786444, 1, 0, 786443, 1, 0, 786442, 1, 0, 720906, 1, 0, 655370, 1, 0, 589834, 1, 0, 524298, 1, 0, 458764, 1, 0, 458765, 1, 0, 393229, 1, 0, 327693, 1, 0, 327694, 1, 0, 327695, 1, 0, 327696, 1, 0, 327697, 1, 0, 327698, 1, 0, 327699, 1, 0, 393235, 1, 0, 458771, 1, 0, 458773, 1, 0, 458772, 1, 0, 524309, 1, 0, 589845, 1, 0, 655381, 1, 0, 720917, 1, 0, 720916, 1, 0, 720915, 1, 0, 786451, 1, 0, 851987, 1, 0, 917523, 1, 0, 786447, 1, 0, 524300, 1, 0, 524299, 1, 0, 524308, 1, 0, 786446, 1, 0, 589835, 1, 0, 655371, 1, 0, 655372, 1, 0, 655373, 1, 0, 1179667, 1, 0)
+script = ExtResource("3_cyi0s")
+
+[node name="Balloon" parent="." instance=ExtResource("4_2lfk4")]
+layer_0/tile_data = PackedInt32Array(524302, 0, 65536)
+
+[node name="Balloon2" parent="." instance=ExtResource("4_2lfk4")]
+layer_0/tile_data = PackedInt32Array(1179663, 0, 131072)
+is_player = false
+
+[node name="Objects" type="TileMap" parent="."]
+tile_set = ExtResource("5_otae6")
+format = 2
+layer_0/tile_data = PackedInt32Array(720906, 0, 458752, 655372, 0, 524288, 786450, 0, 196608, 851986, 0, 196608, 851985, 0, 196608, 786449, 0, 262144, 1179666, 0, 65536, 1179662, 0, 458752)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 328)
+
+[node name="Deco" type="Node2D" parent="."]
+
+[node name="BalloonDeco" parent="Deco" instance=ExtResource("6_8p3ba")]
+self_modulate = Color(0.658824, 0.8, 0.984314, 1)
+position = Vector2(185, 234)
+
+[node name="BalloonDeco3" parent="Deco" instance=ExtResource("6_8p3ba")]
+self_modulate = Color(0.658824, 0.8, 0.984314, 1)
+position = Vector2(1035, 505)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("7_jg6au")
+
+[node name="SparkleGroup" type="Node2D" parent="Deco"]
+position = Vector2(129, 470)
+
+[node name="SparkleDeco" parent="Deco/SparkleGroup" instance=ExtResource("8_ygr10")]
+position = Vector2(-8, 16.4)
+
+[node name="SparkleDeco2" parent="Deco/SparkleGroup" instance=ExtResource("8_ygr10")]
+position = Vector2(24, 8.39999)
+scale = Vector2(0.5, 0.5)
+
+[node name="SparkleDeco3" parent="Deco/SparkleGroup" instance=ExtResource("8_ygr10")]
+position = Vector2(8, -15.6)
+scale = Vector2(0.35, 0.35)
+
+[node name="SparkleGroup2" type="Node2D" parent="Deco"]
+position = Vector2(991, 182)
+
+[node name="SparkleDeco" parent="Deco/SparkleGroup2" instance=ExtResource("8_ygr10")]
+position = Vector2(-8, 16.4)
+scale = Vector2(0.7, 0.7)
+
+[node name="SparkleDeco2" parent="Deco/SparkleGroup2" instance=ExtResource("8_ygr10")]
+position = Vector2(16, 7.99997)
+scale = Vector2(0.5, 0.5)
+
+[node name="SparkleDeco3" parent="Deco/SparkleGroup2" instance=ExtResource("8_ygr10")]
+position = Vector2(8, 32)
+scale = Vector2(0.35, 0.35)
+
+[node name="Arrow" type="Sprite2D" parent="."]
+visible = false
+material = SubResource("ShaderMaterial_5ab4h")
+position = Vector2(678, 143)
+scale = Vector2(1.6875, 1.1875)
+texture = ExtResource("10_deywa")
+script = ExtResource("11_p6x4l")
+move_angle = 3.0
+
+[node name="SpaceKey" type="Sprite2D" parent="."]
+visible = false
+material = SubResource("ShaderMaterial_q2ywg")
+position = Vector2(764, 196)
+texture = ExtResource("12_31xnr")
+script = ExtResource("11_p6x4l")
+move_angle = 3.0
+move_time = 1.5
+
+[node name="Keyboard" type="Node2D" parent="."]
+position = Vector2(472, 552)
+scale = Vector2(0.6, 0.6)
+script = ExtResource("11_p6x4l")
+move_angle = 2.0
+move_time = 2.0
+
+[node name="RightKey" type="Sprite2D" parent="Keyboard"]
+material = SubResource("ShaderMaterial_hjtiy")
+position = Vector2(-150, 40)
+texture = ExtResource("13_5e25k")
+script = ExtResource("11_p6x4l")
+move_angle = 4.0
+move_time = 1.1
+
+[node name="RightKey2" type="Sprite2D" parent="Keyboard"]
+material = SubResource("ShaderMaterial_hjtiy")
+position = Vector2(-220, -38.3333)
+rotation = -1.59308
+texture = ExtResource("13_5e25k")
+script = ExtResource("11_p6x4l")
+move_angle = 4.0
+move_time = 1.3
+
+[node name="RightKey3" type="Sprite2D" parent="Keyboard"]
+material = SubResource("ShaderMaterial_hjtiy")
+position = Vector2(-220, 33.3333)
+rotation = -4.65954
+texture = ExtResource("13_5e25k")
+script = ExtResource("11_p6x4l")
+move_angle = 4.0
+move_time = 1.4
+
+[node name="RightKey4" type="Sprite2D" parent="Keyboard"]
+material = SubResource("ShaderMaterial_hjtiy")
+position = Vector2(-296.667, 43.3333)
+rotation = -3.19274
+texture = ExtResource("13_5e25k")
+script = ExtResource("11_p6x4l")
+move_angle = 4.0
+move_time = 1.2
+
+[node name="Tuto" type="Node2D" parent="."]
+visible = false
+
+[node name="Sad" type="Sprite2D" parent="Tuto"]
+material = SubResource("ShaderMaterial_iadin")
+position = Vector2(101, 397)
+scale = Vector2(0.875, 0.90625)
+texture = ExtResource("14_y13ol")
+script = ExtResource("11_p6x4l")
+randomize_params = true
+
+[node name="RightArrow" type="Sprite2D" parent="Tuto"]
+material = SubResource("ShaderMaterial_iadin")
+position = Vector2(164, 398)
+scale = Vector2(2.0625, 2.125)
+texture = ExtResource("15_fmyc8")
+script = ExtResource("11_p6x4l")
+randomize_params = true
+
+[node name="Z" type="Sprite2D" parent="Tuto"]
+material = SubResource("ShaderMaterial_iadin")
+position = Vector2(237, 397)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("16_d6giy")
+script = ExtResource("11_p6x4l")
+randomize_params = true
+
+[node name="Supersad" type="Sprite2D" parent="Tuto"]
+material = SubResource("ShaderMaterial_iadin")
+position = Vector2(763, 333)
+scale = Vector2(1.1875, 0.9375)
+texture = ExtResource("17_rin06")
+script = ExtResource("11_p6x4l")
+randomize_params = true
+
+[node name="RightArrow2" type="Sprite2D" parent="Tuto"]
+material = SubResource("ShaderMaterial_iadin")
+position = Vector2(853, 349.5)
+scale = Vector2(2.1875, 1.46875)
+texture = ExtResource("15_fmyc8")
+script = ExtResource("11_p6x4l")
+randomize_params = true
+
+[node name="R" type="Sprite2D" parent="Tuto"]
+material = SubResource("ShaderMaterial_iadin")
+position = Vector2(916, 347)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("18_5u2wh")
+script = ExtResource("11_p6x4l")
+randomize_params = true

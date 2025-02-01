@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=3 format=3 uid="uid://cdf8bvb8n5yi4"]
+
+[ext_resource type="PackedScene" uid="uid://do1mryj3upk1" path="res://scenes/levels/Level3-3.tscn" id="1_uloml"]
+[ext_resource type="Script" path="res://resources/leveldatas/LevelData.gd" id="2_n0ixn"]
+
+[resource]
+script = ExtResource("2_n0ixn")
+lv_title = "Roles Reversed"
+lv_scene = ExtResource("1_uloml")
+enable_switch = false

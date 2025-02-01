@@ -1,0 +1,89 @@
+[gd_scene load_steps=15 format=3 uid="uid://x21ela1b7y3v"]
+
+[ext_resource type="PackedScene" uid="uid://p38cn72r7q1m" path="res://scenes/ui/SceneChangeButton.tscn" id="1_5yw2c"]
+[ext_resource type="Texture2D" uid="uid://c37uuoyhseokd" path="res://resources/sprites/ui/start_button.png" id="1_7m0r0"]
+[ext_resource type="Texture2D" uid="uid://cfjw6ljgkqikq" path="res://resources/sprites/title.png" id="5_p0uyf"]
+[ext_resource type="Texture2D" uid="uid://cyq52mxq2jqro" path="res://resources/sprites/ui/credits_button.png" id="6_6pteo"]
+[ext_resource type="Script" path="res://scenes/decorations/upDown3.gd" id="9_7cnys"]
+[ext_resource type="Shader" path="res://resources/shaders/drop_shadow.gdshader" id="9_l78r6"]
+[ext_resource type="Script" path="res://scenes/decorations/upDown.gd" id="10_hawkc"]
+[ext_resource type="Texture2D" uid="uid://wawlxivxiwpm" path="res://resources/sprites/Assets/Bubbles_Vectors_2.png" id="10_i11oq"]
+[ext_resource type="Script" path="res://scenes/decorations/upDown2.gd" id="11_2g4ei"]
+[ext_resource type="Script" path="res://scenes/decorations/RotationTween.gd" id="11_kp68i"]
+[ext_resource type="Texture2D" uid="uid://b1amie1tr65la" path="res://resources/sprites/Assets/Bubbles_Vectors_1.png" id="11_w1gky"]
+[ext_resource type="PackedScene" uid="uid://bkq7xno86tr4y" path="res://scenes/decorations/BalloonDeco.tscn" id="13_35ubx"]
+[ext_resource type="PackedScene" uid="uid://dgpxvw0jaw4lm" path="res://scenes/scenes/bg2.tscn" id="14_gochy"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4dxt0"]
+shader = ExtResource("9_l78r6")
+shader_parameter/borderScale = 2.0
+shader_parameter/offset = Vector2(-10, -10)
+shader_parameter/color = Color(0, 0, 0, 0.454902)
+shader_parameter/debug = false
+
+[node name="Title" type="Node2D"]
+
+[node name="StartButton" parent="." instance=ExtResource("1_5yw2c")]
+offset_left = 177.0
+offset_top = 178.0
+offset_right = 321.0
+offset_bottom = 226.0
+texture_normal = ExtResource("1_7m0r0")
+scene_to = "LevelSelect"
+
+[node name="CreditsButton" parent="." instance=ExtResource("1_5yw2c")]
+offset_left = 379.0
+offset_top = 176.0
+offset_right = 523.0
+offset_bottom = 224.0
+texture_normal = ExtResource("6_6pteo")
+scene_to = "Credits"
+
+[node name="Title" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_4dxt0")
+position = Vector2(344, 104)
+scale = Vector2(1.006, 1.006)
+texture = ExtResource("5_p0uyf")
+script = ExtResource("11_kp68i")
+move_angle = 2.0
+move_time = 1.5
+
+[node name="Node" type="Node" parent="."]
+
+[node name="BalloonDeco2" parent="Node" instance=ExtResource("13_35ubx")]
+z_as_relative = false
+material = null
+position = Vector2(809, 117)
+scale = Vector2(0.140741, 0.138575)
+texture = ExtResource("10_i11oq")
+script = ExtResource("9_7cnys")
+move_range = 8.0
+randomize_params = true
+
+[node name="BalloonDeco3" parent="Node" instance=ExtResource("13_35ubx")]
+self_modulate = Color(0.658824, 0.8, 0.984314, 1)
+material = null
+position = Vector2(69, 350)
+scale = Vector2(0.212037, 0.196296)
+texture = ExtResource("11_w1gky")
+script = ExtResource("10_hawkc")
+move_range = 12.0
+move_time = 3.0
+randomize_params = true
+
+[node name="BalloonDeco4" parent="Node" instance=ExtResource("13_35ubx")]
+self_modulate = Color(0.658824, 0.8, 0.984314, 1)
+material = null
+position = Vector2(983, 590)
+scale = Vector2(0.288889, 0.27037)
+texture = ExtResource("11_w1gky")
+script = ExtResource("11_2g4ei")
+move_range = 8.0
+randomize_params = true
+
+[node name="BG" parent="." instance=ExtResource("14_gochy")]
+position = Vector2(-2, -7)
+
+[node name="Sprite2D" type="Sprite2D" parent="BG"]
+visible = false
+position = Vector2(12, 79)

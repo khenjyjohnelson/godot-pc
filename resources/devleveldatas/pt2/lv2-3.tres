@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=3 format=3 uid="uid://jui5i1hmwu43"]
+
+[ext_resource type="PackedScene" uid="uid://h3e4w10exy0i" path="res://scenes/levels/Level2-3.tscn" id="1_7abqd"]
+[ext_resource type="Script" path="res://resources/leveldatas/LevelData.gd" id="2_rtgjy"]
+
+[resource]
+script = ExtResource("2_rtgjy")
+lv_title = "Never Gonna Let You Down"
+lv_scene = ExtResource("1_7abqd")
+enable_switch = false

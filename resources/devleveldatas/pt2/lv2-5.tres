@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=3 format=3 uid="uid://bsvjbteiai3yy"]
+
+[ext_resource type="PackedScene" uid="uid://b4gfu0050vukp" path="res://scenes/levels/Level2-5.tscn" id="1_ywfpl"]
+[ext_resource type="Script" path="res://resources/leveldatas/LevelData.gd" id="2_dys1i"]
+
+[resource]
+script = ExtResource("2_dys1i")
+lv_title = "Tank Room"
+lv_scene = ExtResource("1_ywfpl")
+enable_switch = false

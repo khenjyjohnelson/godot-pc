@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=3 format=3 uid="uid://bs0fmc2rjfaka"]
+
+[ext_resource type="PackedScene" uid="uid://bbd14naa6h244" path="res://scenes/levels/Level2-2.tscn" id="1_6qtem"]
+[ext_resource type="Script" path="res://resources/leveldatas/LevelData.gd" id="2_58bb0"]
+
+[resource]
+script = ExtResource("2_58bb0")
+lv_title = "Sticked Out"
+lv_scene = ExtResource("1_6qtem")
+enable_switch = false

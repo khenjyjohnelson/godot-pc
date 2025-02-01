@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=3 format=3 uid="uid://cgvpbc4e0pk0b"]
+
+[ext_resource type="PackedScene" uid="uid://u6ic8nfm6x0l" path="res://scenes/levels/Level1-4.tscn" id="1_ucr4i"]
+[ext_resource type="Script" path="res://resources/leveldatas/LevelData.gd" id="2_f7i70"]
+
+[resource]
+script = ExtResource("2_f7i70")
+lv_title = "Can't Fit"
+lv_scene = ExtResource("1_ucr4i")
+enable_switch = false

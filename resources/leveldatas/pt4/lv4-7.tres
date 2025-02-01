@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=3 format=3 uid="uid://c1tq8dt53xft1"]
+
+[ext_resource type="PackedScene" uid="uid://6hwmthp0tjkc" path="res://scenes/levels/Level4-7.tscn" id="1_tyrrc"]
+[ext_resource type="Script" path="res://resources/leveldatas/LevelData.gd" id="2_jie1o"]
+
+[resource]
+script = ExtResource("2_jie1o")
+lv_title = "Long Balon"
+lv_scene = ExtResource("1_tyrrc")
+enable_switch = true

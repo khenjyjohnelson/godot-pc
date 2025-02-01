@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=3 format=3 uid="uid://dea8jvo83q5j3"]
+
+[ext_resource type="PackedScene" uid="uid://cdthvbku3j3yo" path="res://scenes/levels/Level1-5.tscn" id="1_7fh78"]
+[ext_resource type="Script" path="res://resources/leveldatas/LevelData.gd" id="2_pttys"]
+
+[resource]
+script = ExtResource("2_pttys")
+lv_title = "Face Shield"
+lv_scene = ExtResource("1_7fh78")
+enable_switch = false

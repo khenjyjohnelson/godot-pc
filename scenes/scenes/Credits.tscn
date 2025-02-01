@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://b2ikhy8cp8sm"]
+
+[ext_resource type="PackedScene" uid="uid://p38cn72r7q1m" path="res://scenes/ui/SceneChangeButton.tscn" id="3_ern0m"]
+[ext_resource type="PackedScene" uid="uid://r6j1n35055hn" path="res://scenes/BG.tscn" id="5_dcyfk"]
+[ext_resource type="FontFile" uid="uid://sxj7ojsxi2rx" path="res://resources/HelvetiHand.ttf" id="13_b2cbn"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ks0fg"]
+font = ExtResource("13_b2cbn")
+font_size = 24
+font_color = Color(0.868985, 0.868985, 0.868985, 1)
+outline_size = 9
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Title" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 14.0
+offset_top = 15.0
+offset_right = 792.0
+offset_bottom = 474.0
+text = "[Source] 
+lightpotatodev
+
+[Song & sfx]
+Nostalgia by Musmus
+
+[Playtesters]
+Fellow GGJ Batam Team 8
+Fellow GGJ Batam organizers
+Fellow GGJ Batam Participant
+Whoever Find this Game 
+"
+label_settings = SubResource("LabelSettings_ks0fg")
+
+[node name="BG" parent="." instance=ExtResource("5_dcyfk")]
+
+[node name="BackButton" parent="." instance=ExtResource("3_ern0m")]
+offset_left = 19.0
+offset_top = 561.0
+offset_right = 147.0
+offset_bottom = 625.0

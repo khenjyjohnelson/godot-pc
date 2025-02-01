@@ -1,19 +1,32 @@
 # Godot 4+ specific ignores
-.godot/
-/android/
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
 
 # Godot-specific files
-.import/             # Ignore the imported assets folder
-export/              # Ignore the export folder
-*.import             # Ignore specific imported files
+.godot/
 
-# OS-specific files
-.DS_Store            # macOS metadata files
-Thumbs.db            # Windows thumbnail cache
-desktop.ini          # Windows folder settings file
+# Ignore temporary files and cache
+import-*
 
-# Version control
-*.log                # Log files
-*.tmp                # Temporary files
-*.bak                # Backup files
-*.swp                # Vim swap files
+# Godot export presets - Uncomment if you want to exclude export settings
+# export_presets.cfg
+
+# Ignore all resource imports
+*.import
+
+# Ignore log files (if any are generated)
+*.log
+
+# Other common files
+*.tmp
+*.bak
+
+# Node modules (if used alongside Godot for scripting or other tools)
+node_modules/
+
+# General backup files
+*.~*
+*.swp
+*.swo

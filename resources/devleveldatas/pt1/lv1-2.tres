@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=3 format=3 uid="uid://c7k38jqesej05"]
+
+[ext_resource type="PackedScene" uid="uid://eyia7h13ktoc" path="res://scenes/levels/Level1-2.tscn" id="1_yp3re"]
+[ext_resource type="Script" path="res://resources/leveldatas/LevelData.gd" id="2_snit4"]
+
+[resource]
+script = ExtResource("2_snit4")
+lv_title = "Simple Blockade"
+lv_scene = ExtResource("1_yp3re")
+enable_switch = false

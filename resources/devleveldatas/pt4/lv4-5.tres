@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=3 format=3 uid="uid://xb71wrh6weg8"]
+
+[ext_resource type="PackedScene" uid="uid://bntcoudy1cml4" path="res://scenes/levels/Level4-5.tscn" id="1_sqkid"]
+[ext_resource type="Script" path="res://resources/leveldatas/LevelData.gd" id="2_s20t8"]
+
+[resource]
+script = ExtResource("2_s20t8")
+lv_title = "Boxing Boxes"
+lv_scene = ExtResource("1_sqkid")
+enable_switch = true

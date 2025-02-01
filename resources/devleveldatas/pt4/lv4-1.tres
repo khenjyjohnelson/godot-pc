@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=3 format=3 uid="uid://dlg0l143g3o1m"]
+
+[ext_resource type="PackedScene" uid="uid://caetkhpqpvmny" path="res://scenes/levels/newLevel1.tscn" id="1_kixvc"]
+[ext_resource type="Script" path="res://resources/leveldatas/LevelData.gd" id="2_ekupb"]
+
+[resource]
+script = ExtResource("2_ekupb")
+lv_title = "Hello Blue"
+lv_scene = ExtResource("1_kixvc")
+enable_switch = true

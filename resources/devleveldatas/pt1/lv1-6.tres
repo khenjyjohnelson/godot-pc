@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=3 format=3 uid="uid://b17egk5o0ixlx"]
+
+[ext_resource type="PackedScene" uid="uid://bd7ayn4ra6y43" path="res://scenes/levels/Level1-6.tscn" id="1_itpn1"]
+[ext_resource type="Script" path="res://resources/leveldatas/LevelData.gd" id="2_wvtpf"]
+
+[resource]
+script = ExtResource("2_wvtpf")
+lv_title = "Suspicious Level"
+lv_scene = ExtResource("1_itpn1")
+enable_switch = false

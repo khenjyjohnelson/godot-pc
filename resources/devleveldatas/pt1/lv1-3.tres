@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=3 format=3 uid="uid://b0xg4a0oknk13"]
+
+[ext_resource type="PackedScene" uid="uid://drkxu571chhfx" path="res://scenes/levels/Level1-3.tscn" id="1_ywvmr"]
+[ext_resource type="Script" path="res://resources/leveldatas/LevelData.gd" id="2_74rjn"]
+
+[resource]
+script = ExtResource("2_74rjn")
+lv_title = "Air Detected"
+lv_scene = ExtResource("1_ywvmr")
+enable_switch = false
