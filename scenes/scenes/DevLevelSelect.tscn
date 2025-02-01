@@ -280,5 +280,22 @@ my_bus = 1
 position = Vector2(-1, -21)
 metadata/_edit_lock_ = true
 
+[node name="Label" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 583.0
+offset_top = 96.0
+offset_right = 1053.0
+offset_bottom = 405.0
+text = "Caution:
+Before you access this developer levels
+Open the godot repository
+
+Please rename the devleveldatas from resource folder to leveldatas and leveldatas to devleveldatas, then move LevelData.gd from the old place to the new one
+
+After that, click run
+
+Do the opposite again after you're done with developer levels and want to access the public levels"
+autowrap_mode = 3
+
 [connection signal="value_changed" from="Node2D/MusicVolumeSlider" to="Node2D/MusicVolumeSlider" method="_on_value_changed"]
 [connection signal="value_changed" from="Node2D/SFXVolumeSlider" to="Node2D/SFXVolumeSlider" method="_on_value_changed"]

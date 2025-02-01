@@ -54,41 +54,32 @@ position = Vector2(208, 288)
 self_modulate = Color(0.658824, 0.8, 0.984314, 1)
 position = Vector2(769, 241)
 scale = Vector2(0.7, 0.7)
-move_time = 1.6
 
 [node name="BalloonDeco3" parent="Deco" instance=ExtResource("6_v718f")]
 self_modulate = Color(0.658824, 0.8, 0.984314, 1)
 position = Vector2(881, 481)
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("7_btvy6")
-move_time = 1.8
 
 [node name="BalloonDeco4" parent="Deco" instance=ExtResource("6_v718f")]
 self_modulate = Color(0.658824, 0.8, 0.984314, 1)
 position = Vector2(327, 485)
 scale = Vector2(1.2, 1.2)
 texture = ExtResource("7_btvy6")
-move_y = 8.0
-move_time = 2.2
 
 [node name="SparkleGroup" type="Node2D" parent="Deco"]
 position = Vector2(348, 323)
 
 [node name="SparkleDeco" parent="Deco/SparkleGroup" instance=ExtResource("8_kvpi4")]
 position = Vector2(-8, 16.4)
-move_y = 3.0
 
 [node name="SparkleDeco2" parent="Deco/SparkleGroup" instance=ExtResource("8_kvpi4")]
 position = Vector2(24, 8.39999)
 scale = Vector2(0.5, 0.5)
-move_y = 2.0
-move_time = 1.2
 
 [node name="SparkleDeco3" parent="Deco/SparkleGroup" instance=ExtResource("8_kvpi4")]
 position = Vector2(8, -15.6)
 scale = Vector2(0.35, 0.35)
-move_y = 3.0
-move_time = 1.5
 
 [node name="SparkleGroup2" type="Node2D" parent="Deco"]
 position = Vector2(813, 357)
@@ -96,16 +87,11 @@ position = Vector2(813, 357)
 [node name="SparkleDeco" parent="Deco/SparkleGroup2" instance=ExtResource("8_kvpi4")]
 position = Vector2(-8, 16.4)
 scale = Vector2(0.7, 0.7)
-move_y = 3.0
 
 [node name="SparkleDeco2" parent="Deco/SparkleGroup2" instance=ExtResource("8_kvpi4")]
 position = Vector2(16, 7.99997)
 scale = Vector2(0.5, 0.5)
-move_y = 2.0
-move_time = 1.2
 
 [node name="SparkleDeco3" parent="Deco/SparkleGroup2" instance=ExtResource("8_kvpi4")]
 position = Vector2(8, 32)
 scale = Vector2(0.35, 0.35)
-move_y = 3.0
-move_time = 1.5

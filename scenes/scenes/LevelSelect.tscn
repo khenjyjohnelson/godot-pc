@@ -35,13 +35,13 @@ shader_parameter/debug = false
 [node name="LevelButtons" type="Node2D" parent="."]
 
 [node name="Part1" type="Node2D" parent="LevelButtons"]
-position = Vector2(17, -50)
+position = Vector2(113, -22)
 
 [node name="Label" type="Label" parent="LevelButtons/Part1"]
-offset_left = 296.0
-offset_top = 72.0
-offset_right = 382.0
-offset_bottom = 113.0
+offset_left = 27.0
+offset_top = 134.0
+offset_right = 113.0
+offset_bottom = 175.0
 text = "Part 1"
 label_settings = SubResource("LabelSettings_l2x8n")
 horizontal_alignment = 1
@@ -68,29 +68,14 @@ layout_mode = 2
 lv = 1
 sub_lv = 3
 
-[node name="1-4" parent="LevelButtons/Part1/HBoxContainer" instance=ExtResource("1_ga0kn")]
-layout_mode = 2
-lv = 1
-sub_lv = 4
-
-[node name="1-5" parent="LevelButtons/Part1/HBoxContainer" instance=ExtResource("1_ga0kn")]
-layout_mode = 2
-lv = 1
-sub_lv = 5
-
-[node name="1-6" parent="LevelButtons/Part1/HBoxContainer" instance=ExtResource("1_ga0kn")]
-layout_mode = 2
-lv = 1
-sub_lv = 6
-
 [node name="Part2" type="Node2D" parent="LevelButtons"]
-position = Vector2(-104, 194)
+position = Vector2(73, 94)
 
 [node name="Label" type="Label" parent="LevelButtons/Part2"]
-offset_left = 848.0
-offset_top = -56.0
-offset_right = 939.0
-offset_bottom = -15.0
+offset_left = 615.0
+offset_top = 8.0
+offset_right = 706.0
+offset_bottom = 49.0
 text = "Part 2"
 label_settings = SubResource("LabelSettings_l2x8n")
 horizontal_alignment = 1
@@ -112,29 +97,14 @@ layout_mode = 2
 lv = 2
 sub_lv = 2
 
-[node name="2-3" parent="LevelButtons/Part2/HBoxContainer" instance=ExtResource("1_ga0kn")]
-layout_mode = 2
-lv = 2
-sub_lv = 3
-
-[node name="2-4" parent="LevelButtons/Part2/HBoxContainer" instance=ExtResource("1_ga0kn")]
-layout_mode = 2
-lv = 2
-sub_lv = 4
-
-[node name="2-5" parent="LevelButtons/Part2/HBoxContainer" instance=ExtResource("1_ga0kn")]
-layout_mode = 2
-lv = 2
-sub_lv = 5
-
 [node name="Part3" type="Node2D" parent="LevelButtons"]
-position = Vector2(-319, 300)
+position = Vector2(-120, 320)
 
 [node name="Label" type="Label" parent="LevelButtons/Part3"]
-offset_left = 552.0
-offset_top = -56.0
-offset_right = 642.0
-offset_bottom = -15.0
+offset_left = 256.0
+offset_top = 11.0
+offset_right = 346.0
+offset_bottom = 52.0
 text = "Part 3"
 label_settings = SubResource("LabelSettings_l2x8n")
 horizontal_alignment = 1
@@ -160,34 +130,14 @@ layout_mode = 2
 lv = 3
 sub_lv = 3
 
-[node name="3-4" parent="LevelButtons/Part3/HBoxContainer" instance=ExtResource("1_ga0kn")]
-layout_mode = 2
-lv = 3
-sub_lv = 4
-
-[node name="3-5" parent="LevelButtons/Part3/HBoxContainer" instance=ExtResource("1_ga0kn")]
-layout_mode = 2
-lv = 3
-sub_lv = 5
-
-[node name="3-6" parent="LevelButtons/Part3/HBoxContainer" instance=ExtResource("1_ga0kn")]
-layout_mode = 2
-lv = 3
-sub_lv = 6
-
-[node name="3-7" parent="LevelButtons/Part3/HBoxContainer" instance=ExtResource("1_ga0kn")]
-layout_mode = 2
-lv = 3
-sub_lv = 7
-
 [node name="Part4" type="Node2D" parent="LevelButtons"]
-position = Vector2(197, 443)
+position = Vector2(392, 316)
 
 [node name="Label" type="Label" parent="LevelButtons/Part4"]
-offset_left = 552.0
-offset_top = -56.0
-offset_right = 642.0
-offset_bottom = -15.0
+offset_left = 259.0
+offset_top = 15.0
+offset_right = 351.0
+offset_bottom = 56.0
 text = "Part 4"
 label_settings = SubResource("LabelSettings_l2x8n")
 horizontal_alignment = 1
@@ -212,26 +162,6 @@ sub_lv = 2
 layout_mode = 2
 lv = 4
 sub_lv = 3
-
-[node name="4-4" parent="LevelButtons/Part4/HBoxContainer" instance=ExtResource("1_ga0kn")]
-layout_mode = 2
-lv = 4
-sub_lv = 4
-
-[node name="4-5" parent="LevelButtons/Part4/HBoxContainer" instance=ExtResource("1_ga0kn")]
-layout_mode = 2
-lv = 4
-sub_lv = 5
-
-[node name="4-6" parent="LevelButtons/Part4/HBoxContainer" instance=ExtResource("1_ga0kn")]
-layout_mode = 2
-lv = 4
-sub_lv = 6
-
-[node name="4-7" parent="LevelButtons/Part4/HBoxContainer" instance=ExtResource("1_ga0kn")]
-layout_mode = 2
-lv = 4
-sub_lv = 7
 
 [node name="BackButton" parent="." instance=ExtResource("1_s6i36")]
 offset_left = 24.0

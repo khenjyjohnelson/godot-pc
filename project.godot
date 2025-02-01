@@ -10,9 +10,9 @@ config_version=5
 
 [application]
 
-config/name="Balloon Gaem"
+config/name="godot-pc"
 run/main_scene="res://scenes/scenes/Title.tscn"
-config/features=PackedStringArray("4.3", "GL Compatibility")
+config/features=PackedStringArray("4.3", "Forward Plus")
 boot_splash/bg_color=Color(0.141176, 0.141176, 0.141176, 1)
 config/icon="res://icon.svg"
 
@@ -26,6 +26,14 @@ Music="*res://scenes/system/Music.tscn"
 [display]
 
 window/stretch/mode="viewport"
+
+[dotnet]
+
+project/assembly_name="godot-pc"
+
+[editor]
+
+version_control/autoload_on_startup=true
 
 [input]
 

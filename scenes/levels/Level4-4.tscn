@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://2jnve87i0a35"]
+[gd_scene load_steps=11 format=3 uid="uid://de8v1nlqpkjnt"]
 
 [ext_resource type="Texture2D" uid="uid://cg37twk5njfgt" path="res://resources/sprites/objects/cloud_floor.png" id="1_4c6i3"]
 [ext_resource type="TileSet" uid="uid://cau1xylhqfcta" path="res://resources/terrain_tiles.tres" id="2_n0134"]
