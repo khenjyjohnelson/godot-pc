@@ -1,11 +1,11 @@
 [gd_scene load_steps=8 format=3 uid="uid://dgpxvw0jaw4lm"]
 
-[ext_resource type="Texture2D" uid="uid://cfbbk2svlay26" path="res://resources/sprites/Assets/Main Menu_OnlyColors.png" id="1_ju2k1"]
-[ext_resource type="Texture2D" uid="uid://ddlyk6vc8h060" path="res://resources/sprites/decorations/cloud.png" id="1_mfyxj"]
-[ext_resource type="Texture2D" uid="uid://dt4vvt863lro6" path="res://resources/sprites/objects/balloon.png" id="3_43h2x"]
-[ext_resource type="Texture2D" uid="uid://dtw4qpfm8o457" path="res://resources/sprites/decorations/cloud2.png" id="3_vilrl"]
+[ext_resource type="Texture2D" uid="uid://c5m6qdhpktaat" path="res://resources/sprites/Assets/Main Menu_OnlyColors.png" id="1_ju2k1"]
+[ext_resource type="Texture2D" uid="uid://cnlh0d26mo6cx" path="res://resources/sprites/decorations/cloud.png" id="1_mfyxj"]
+[ext_resource type="Texture2D" uid="uid://bss7r2t511kl8" path="res://resources/sprites/objects/balloon.png" id="3_43h2x"]
+[ext_resource type="Texture2D" uid="uid://du7lryt06nsgt" path="res://resources/sprites/decorations/cloud2.png" id="3_vilrl"]
 [ext_resource type="Material" uid="uid://bheq76h3hhbcm" path="res://resources/star_particle.tres" id="4_3m2d0"]
-[ext_resource type="Texture2D" uid="uid://cdgw2nt07j0mr" path="res://resources/sprites/ballon_v3/ballon.png" id="4_nqiut"]
+[ext_resource type="Texture2D" uid="uid://bss7r2t511kl8" path="res://resources/sprites/objects/balloon.png" id="4_nqiut"]
 [ext_resource type="Material" uid="uid://c7mp1dg6bctnv" path="res://resources/bubble2_particle.tres" id="4_xc07c"]
 
 [node name="BGnew" type="Node2D"]
